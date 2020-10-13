@@ -1,7 +1,7 @@
 #page-landing {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(329.54deg, #29b6d1 8%, #00c7c7 100%);   
+  background: linear-gradient(329.54deg, #29b6d1 8%, #00c7c7 100%);
 
   display: flex;
   justify-content: center;
@@ -20,8 +20,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  background: url('../../images/landing.svg') no-repeat 80% center;
-
+  background: url("../../images/landing.svg") no-repeat 80% center;
 }
 #page-landing .content-wrapper main {
   max-width: 350px;
@@ -47,12 +46,10 @@
   display: flex;
   flex-direction: column;
   text-align: right;
-
 }
 
 .content-wrapper .location strong {
   font-weight: 800;
-
 }
 
 .content-wrapper .enter-app {
@@ -68,12 +65,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .content-wrapper .enter-app:hover {
   background: #96feff;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-name: bounce;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
@@ -86,5 +83,4 @@
   to {
     transform: scale(1.1);
   }
-
 }
