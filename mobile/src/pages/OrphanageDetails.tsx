@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Image, View, ScrollView, Text, StyleSheet, Dimensions, TouchableOpacity, Linking } from 'react-native';
-import MapView, { Marker } from 'react-native-maps';
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 import { Feather, FontAwesome } from '@expo/vector-icons';
 
 import mapMarkerImg from '../images/map-marker.png';
@@ -84,6 +84,7 @@ export default function OrphanageDetails() {
             scrollEnabled={false}
             rotateEnabled={false}
             style={styles.mapStyle}
+            provider={PROVIDER_GOOGLE}
           >
             <Marker
               icon={mapMarkerImg}
@@ -109,7 +110,7 @@ export default function OrphanageDetails() {
             <Feather name="clock" size={40} color="#2AB5D1" />
             <Text style={[styles.scheduleText, styles.scheduleTextBlue]}>{orphanageDetail.opening_hours}</Text>
           </View>
-          { !orphanageDetail.open_on_weekends ? (
+          { orphanageDetail.open_on_weekends ? (
             <View style={[styles.scheduleItem, styles.scheduleItemGreen]}>
             <Feather name="info" size={40} color="#39CC83" />
             <Text style={[styles.scheduleText, styles.scheduleTextGreen]}>Atendemos fim de semana</Text>
