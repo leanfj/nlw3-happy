@@ -27,6 +27,13 @@
   max-width: 350px;
 }
 
+#page-landing .content-wrapper .image-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
 #page-landing .content-wrapper main h1 {
   font-size: 76px;
   font-weight: 900;
@@ -40,9 +47,6 @@
 }
 
 .content-wrapper .location {
-  position: absolute;
-  right: 20px;
-  top: 20px;
   font-size: 24px;
   display: flex;
   flex-direction: column;
@@ -75,6 +79,31 @@
   animation-name: bounce;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+
+}
+
+.content-wrapper .button-login {
+  background-color: #12D4E0;
+  padding: 12px 40px;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: all 0.4s;
+}
+
+.content-wrapper .button-login:hover {
+  background-color: #96FEFF;
+  color: #15C3D6;
+  animation-duration: 0.3s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  
 }
 
 @keyframes bounce {
@@ -82,6 +111,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.1);
+    transform: scale(1);
   }
 }
+
